@@ -47,9 +47,6 @@ if (slides.length > 0) {
 rightHotspot.addEventListener('click', () => resetAnd(next));
 leftHotspot.addEventListener('click',  () => resetAnd(prev));
 
-// Touch support (mobile)
-rightHotspot.addEventListener('touchstart', () => resetAnd(next), { passive: true });
-leftHotspot.addEventListener('touchstart',  () => resetAnd(prev), { passive: true });
 
 // Keyboard accessibility: Enter/Space on focused hotspot, plus arrow keys
 [rightHotspot, leftHotspot].forEach(el => {
